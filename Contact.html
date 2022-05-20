@@ -1,0 +1,123 @@
+<!DOCTYPE html>         <!-- Defining it to be Html5 document -->
+<html>
+<head>
+    <title>Contact</title>                            <!-- Title displayed at the title bar of the webpage -->   
+    <meta name="description" content="Contact"/>       <!-- Additional informations about the document --> 
+    <meta name="keywords" content="HTML,CSS,JS"/>
+    <meta name="author" content="Subriti Aryal"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>     <!-- "viewport" makes the website look good on all devices and screen resolutions -->
+    <meta http-equiv="refresh" content="60"/>    <!-- For document to be made to refresh every 60seconds --> 
+    <!-- Internal Css --> 
+    <style>
+            body {
+                background-image: url("./Image/Contact.jpg");               /* Defining the background image for the webpage */ 
+                color: blanchedalmond;                                                   /* Defining the color of text inside the body */ 
+                overflow: hidden;                                                                  /* For removing the scroll bar */
+                }
+
+            footer {                                           /* Specifying the styling for the footer of the page */
+                text-align: center;
+                width: 100%;
+                color:rgb(27, 17, 88);
+                font-size: 26px;
+                }
+            footer span{                                        /* Specifying the styling for the footer span of the page */
+                color:darkred;
+                }
+
+                    .box{margin-left:240px;margin-right: 800px ;margin-top: -40px; margin-bottom: 0px; border-radius: 20px; }  /* Specifying the margins of the class ".box"*/
+                    .box{padding:15px; }                                                                 /* Specifying the paddings of the class ".box"*/
+                    .black{background: rgba(0, 0, 0, 0.5)   }            /* Specifying the Black background with 50% opacity for the class ".black"*/       
+                
+                    .social{text-align: right; font-size: 30px; margin-right: 260px ; }        /* Specifying the styling for the class ".social" */
+                    
+                    h1{
+                        font-family: 'Courier New';         /* Specifying the font style for h1 */
+                        }
+                
+                    .fa {                                           /*Specifying various beautification attributes for class ".fa" */
+                            padding: 15px;
+                            font-size: 30px;
+                            width: 35px;
+                            text-align: center;
+                            text-decoration: none;
+                            border-radius: 50%;
+                            }
+                            .fa-facebook {
+                                    background: #3B5998;
+                                    }
+                             .fa-twitter {
+                                    background: #55ACEE;
+                                     }
+                             .fa-instagram {
+                                    background: #125688;
+                                    }
+                             .fa-envelope {
+                                    background:#55ACEE;
+                                     }
+                             .fa-phone{
+                                    background:#55ACEE;
+                                    }
+     </style>
+</head>
+<body>
+
+        <link rel="stylesheet" href="Css\style.css">       <!-- Referring to the External CSS --> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">       <!-- Referring to the External CSS for social media icons --> 
+        
+        <!-- Referring to the External JS -->
+        <script src="Js\main.js"> </script>    
+
+        <nav >                                                                 <!-- Inline CSS for the navigation bar-->                      
+            <a href="Home.html"style="text-decoration: none";>Home</a> &nbsp; &nbsp;  |&nbsp;        <!-- Links to various other webpages of the same website -->    
+            <a href="CV.html"style="text-decoration: none";>CV</a>&nbsp; &nbsp;  |&nbsp;       <!-- &nbsp; gives spaces in between the links --> 
+            <a href="Blog.html"style="text-decoration: none";>Blog</a>&nbsp; &nbsp;  |&nbsp;                   <!-- text decoration helps remove the default underlining of links-->
+             <a href="Research.html"style="text-decoration: none";>Research</a>&nbsp; &nbsp;  &nbsp;  
+            <hr>
+        </nav>
+     
+        <h1 style="text-align: left;">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;  <b>STAY IN TOUCH WITH ME.</h1><br>  <!-- Inline CSS for h1-->
+
+        <br>
+        <div class="black box">                  <!-- div creates divisions or boxes having properties of class ".black" and ".box"--> 
+                <form name= "form" onsubmit="validateform()" style="text-align: center;">                  <!-- Creation of form --> 
+                        Name: <br>                                                                                                            <!-- onsubmit="myform() calls the function myform() at the time of pressing the submit button"-->
+                        <input type="text" name="name" placeholder="Name"><br><br>                     <!-- Form with "text" input type -->
+                        E-mail: <br>
+                        <input type="text" name="email" placeholder="E-mail"><br><br>
+                        Phone Number: <br>
+                        <input type="text" name="phone" placeholder="+977"><br><br>
+                        <b>Message:</b><br>
+                        <textarea name="Message" rows="4" cols="22" placeholder="Message"></textarea><br>         <!-- Form with "text area" -->
+                        <input type="submit" value="Send" >                                                                                             <!-- Creates a submit button-->
+                 </form>       
+         </div> 
+         
+         <h1 class="social" style="margin-right: 280px;">SOCIAL MEDIA HANDLES</h1>          <!-- Inline CSS for h1 -->
+        
+         <div class="social">                                                                         <!-- Creation of divisions having attributes of the class ".soical"-->
+                    <a href="tel://+977-9843346520" class="fa fa-phone"></a>                                        <!-- Using images as links-->
+                    <a href="https://www.facebook.com/aryal.subriti" class="fa fa-facebook"></a>         <!-- class ".fa" is used for its beautification-->
+                    <a href="https://twitter.com/subritiii" class="fa fa-twitter"></a>
+                    <a href=" https://www.instagram.com/_subritii_" class="fa fa-instagram"></a>
+                    <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWstvKCLLzfcjNBHZJNJLtqdXlRJNrlGGvjvVSDBBJBTGfrMvtNbJHHNkShKSzbrKHJHTpHdl" class="fa fa-envelope"></a>
+         </div>
+         <hr>
+         <footer>                                                                                                                                   <!-- Creates a footer at the end of the page -->
+                    <p>Created by <span> Subriti Aryal</span> | &copy; 2021 All rights reserved.</p>    <!-- <span> changes the style of the particular text enclosed within it -->
+         </footer>    
+    </body>
+</html>
+
+
+
+     
+
+        
+       
+       
+      
+
+
+
+

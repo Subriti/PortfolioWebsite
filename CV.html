@@ -1,0 +1,142 @@
+<!DOCTYPE html>         <!-- Defining it to be Html5 document -->
+<html>
+<head>
+    <title>CV</title>                            <!-- Title displayed at the title bar of the webpage -->   
+    <meta name="description" content="CV"/>       <!-- Additional informations about the document --> 
+    <meta name="keywords" content="HTML,CSS"/>
+    <meta name="author" content="Subriti Aryal"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">   <!-- "viewport" makes the website look good on all devices and screen resolutions -->
+    <meta http-equiv="refresh" content="5"/>    <!-- For document to be made to refresh every 30seconds --> 
+    
+<!-- Internal Css --> 
+  <style>
+            body{
+                    overflow-x: hidden;             /* For removing the horizontal scroll bar */
+                    }
+
+            .backgroundimage {                            /* creating classes  with following attributes*/
+                        background-image: url("./Image/CV background.jpg") ;
+                        width: 100vw;
+                        height: 40vh; 
+                        background-size: 100% 100%;
+                        } 
+
+            .background{                   /* creating classes  with following attributes*/
+                        background-image: url("./Image/white.jpg") ;
+                        width: 100vw;
+                        height: 120vh; 
+                        background-size: 100% 100%;
+                        } 
+
+            .boxbackground{                                    /* creating classes  with following attributes*/
+                        background-image: url("./Image/CV background.jpg") ; 
+                        border-radius: 10px;                     /*creates round edges around the image */
+                        }
+
+             h3{
+                        text-align: center;     /* Specifying the alignment of text for H3 */
+                        font-family: 'Courier New', Courier, monospace;         /* Specifying the font style with backup options*/
+                        font-size: 20px;
+                }
+
+            h1{
+                text-align: center;              /* Specifying the alignment of text for H3 */
+                margin-top: 1%;                  /* Specifying the margins for H3 */
+                font-family: Monotype Corsiva ;    /* Specifying the font style*/
+            }
+
+            .box{margin: 400px; margin-top: -35px; margin-bottom: 10px;}                     /* Specifying the margins of the class ".box"*/
+            .box{padding:10px;}                                                                                          /* Specifying the padding of the class ".box"*/
+            .lightpink{background: #edc2d8ff; text-align: center; border-radius: 10px; }         /* Specifying the background color, border radius and text alignments of the class ".lightpink"*/
+             img {
+                        border-radius: 50%;
+                        width: 15%;
+                        height: 70%;
+                        margin-left: 43%;
+                     }
+    </style>  
+
+</head>
+<body>
+
+    <link rel="stylesheet" href=".\Css\style.css">       <!-- Referring to the External CSS --> 
+
+
+     <nav style="background-color: #edc2d8ff;">                                                                  <!-- Inline CSS --> 
+            <a href="Home.html"style="text-decoration: none";>Home</a> &nbsp; |&nbsp;        <!-- Links to various other webpages of the same website -->    
+            <a href="Blog.html"style="text-decoration: none";>Blog</a>&nbsp; |&nbsp;                <!-- text decoration helps remove the default underlining of links-->
+            <a href="Research.html"style="text-decoration: none";>Research</a>&nbsp; |&nbsp;      <!-- &nbsp; gives spaces in between the links --> 
+            <a href="Contact.html"style="text-decoration: none";>Contact</a>&nbsp; &nbsp;   
+    </nav>
+    <br>
+
+     <div class="backgroundimage">          <!-- Creation of divisions -->
+        <br>
+        <img src="Image\CV pic.png" alt="Avatar">       <!-- Insertion of image -->
+        <br>
+        <h1><b>Subriti Aryal</b></h1>
+    </div>
+        <br>
+
+    <div class="background">
+        <div class="box">       <!-- div creates divisions or boxes, here it is the bigger box--> 
+            <div class="lightpink">   <!-- Creating division or say a sub box here having properties of class .lightpink-->
+
+                <h3>Student</h3>
+                <p><b>Address:</b> Kathmandu, Bauddha, 44600 <br>   <!-- Using text formatters like bold -->
+                    <b>Phone:</b> 9843346520 <br>                   <!-- Breaking lines using <br> -->
+                    <b>E-mail:</b> subritiaryal13@gmail.com
+                </p>
+             </div>
+    
+            <div class="boxbackground">         <!-- Creating another division or say a sub boxes here having properties of class .boxbackground--> 
+                <h3><br>Education</h3>    
+
+                <table>               <!-- Creating Table -->
+                        <tr>               <!-- Specifying the table row -->
+                            <th rowspan="2">2021/03-Current</th>       <!-- Specifying the table header with rowspan=2, meaning a cell would span 2rows -->
+                        </tr>
+                        <tr>
+                            <td><b> &nbsp; &nbsp; Bachelor of Science: Computing</b><br><br><i> &nbsp; &nbsp; Islington College, Kamalpokhari,Kathmandu,Nepal</i></td>   <!-- Specifying the values into the data container-->
+                        </tr>
+                        <tr>   
+                            <th rowspan="2">2018/04-2020/04</th><br>    <!-- Specifying the table header with rowspan=2, meaning a cell would span 2rows -->
+                        </tr>
+                        <tr>
+                            <td><b> <br> &nbsp; &nbsp; High School Diploma</b><br><br><i> &nbsp; &nbsp; Modern Indian School, Chobhar,Kathmandu</i><br> &nbsp; &nbsp; &#149; Graduated with 93.8%</td>    <!-- Specifying the values into the data container-->
+                        </tr>
+                </table>    <!-- Closure of table -->
+            </div>
+            <br>  
+        
+            <div class="lightpink ">       <!-- Creating another division --> 
+                    &#149; Enthusiastic             <!--  &#149; creates smalll bullets-->
+                    &#149; Hardworking
+                    &#149; Consistent <br>
+                    &#149; Excellent written and verbal communication skills <br>
+                    &#149; Punctual and ability to meet deadlines <br>
+                    &#149; Self Motivated to learn, grow and excel
+                    
+            </div>
+
+            <div class= "boxbackground">             <!-- Creating another division or say a sub boxes here  having properties of class .boxbackground--> 
+                    <h3><br>Software</h3>  
+                    <ul>                                    <!-- Creation of an Unordered list -->
+                            <br><li>MySQL:                      <!-- Items of an Unordered list -->
+                                <ul>
+                                    Very Good</ul></li>         <!-- Nesting of another Unordered list -->
+                            <br><li>Python:
+                                <ul>
+                                    Good</ul></li>
+                            <br><li>Java:
+                                <ul>
+                                    Good</ul></li>
+                             <br><li>HTML:
+                                <ul>
+                                    Good</ul></li>
+                    </ul>   
+             </div>
+         </div>
+     </div> 
+ </body>
+</html>

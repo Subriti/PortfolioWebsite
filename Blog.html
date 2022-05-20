@@ -1,0 +1,132 @@
+<!DOCTYPE html>                                         <!-- Defining it to be Html5 document -->
+<html>
+<head>
+    <title> Blog</title>                             <!-- Title displayed at the title bar of the webpage --> 
+    <meta name="description" content="Blog"/>           <!-- Additional informations about the document --> 
+    <meta name="keywords" content="HTML,CSS,JS"/>
+    <meta name="author" content="Subriti Aryal"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">   <!-- "viewport" makes the website look good on all devices and screen resolutions -->
+    
+    <!-- Internal Css --> 
+    <style>
+        .img{width: 500px; height: 300px; border-radius: 10px;}                               /* Width and Height of rounded image to be displayed */
+        .hide {display: None}                                                                        /* .hide is used in the function toggle() to hide or display the image */
+        
+        body {
+            background: url("./Image/Blog.jpg")  no-repeat center fixed;        /* Defining the specifications for background image for the webpage */
+            background-size: cover; 
+            overflow-x: hidden;                                       /* For removing the horizontal scroll bar */
+        }
+        
+        h1{
+            text-align: center;                              /* Specifying the styling for H1 */
+             font-size: 52;                                                              /*Specifying the text size */
+             color: rgb(129, 46, 125);                                               /*Specifying the text color */
+             font-family: 'Courier New', Courier, monospace;          /* Specifying the font style with backup options*/
+        }
+        p{                                                  /* Specifying the styling for p */
+            margin-left: 170px;
+            font-size: large;
+            color:rgb(151, 72, 131);                              /*Specifying the text color */
+            font-family: 'Courier New';                              /* Specifying the font style */
+        }
+        footer {                                           /* Specifying the styling for the footer of the page */
+            width: 100%;
+            color:blanchedalmond; 
+        }
+        footer span{                                        /* Specifying the styling for the footer span of the page */
+            color:darkred;
+        }
+        aside {                                             /* Specifying the styling for the content at the aside of the page */
+            width: 50%;
+            float: right;
+            margin: 2%;
+            margin-top: -1%;
+            padding: 2%;
+            font-style: italic;
+            font-size: 12;
+        }
+    </style>
+</head>
+
+<body>
+    <link rel="stylesheet" href=".\Css\style.css">          <!-- Referring to the External CSS --> 
+    <script src=".\Js\main.js"></script>                    <!-- Referring to the External JS --> 
+
+    <!-- Internal CSS overriding the External CSS -->
+        <style>
+            a:link {
+            color: pink;
+            background-color: transparent;
+            text-decoration: none;
+            }
+            
+            a:visited {
+            color: white;
+            background-color: transparent;
+            text-decoration: none;
+            }
+            
+            a:hover {
+            color:lightgreen;
+            background-color: transparent;
+            text-decoration: none;
+            }
+            
+            a:active {
+            color:darksalmon ;
+            background-color: transparent;
+            text-decoration: none;
+            }
+        </style>
+
+        <nav>                                                   
+                <a href="Home.html"style="text-decoration: none"; >Home</a> &nbsp; |&nbsp;               <!-- Links to various other webpages of the same website --> 
+                <a href="CV.html"style="text-decoration: none";>CV</a>&nbsp; |&nbsp;            <!-- text decoration helps remove the default underlining of links-->
+                <a href="Research.html"style="text-decoration: none";>Research</a>&nbsp; |&nbsp;        <!-- &nbsp; gives spaces in between the links --> 
+                <a href="Contact.html"style="text-decoration: none";>Contact</a>&nbsp; &nbsp;
+                <br>
+                <hr>
+                <b><p id="date"  style="text-align: right;"></p></b>            <!-- Displays the date using its id "date", by using the function display_date() -->
+         </nav>
+
+        <aside>                                                      <!-- Displays content at the side of the page -->
+                Technology has become strongly intertwined to our daily lives. Technology can be seen nearly everywhere. From the tiniest chips to the greatest missiles, technology has contributed in the advancement of our existence.  It makes our lives much easier and convenient; whether it's grocery shopping or purchasing research materials, we can do it all from the comfort of our own houses. In contrast to the days when letters took days to arrive, it allows us to connect with our loved ones in a matter of seconds. Additionally, IoT applications such as Amazon Echo and Google Home Mini act as personal assistants, doing errands, saving time and allowing us to live more efficiently.
+                <br><br>The education sector has benefited greatly from technological advancements. Without needing to read pages and pages of a book, the solution to every question can be obtained in a fraction of a second. Smart learning has arisen as a concept that is accomplished by interactive video tutorials that not only entertain students but also convey all of the lesson's principles. It provides an engaging and pleasant environment.  
+                <br><br>Websites and apps for social media make it a lot easier for us to communicate with people. However, a true addiction to social media can lead to apathy and isolation in real life. Additionally, cyberbullying is a serious concern. Some people take advantage of their anonymity online, believing they can disguise their identities, to attack others with offensive words at their leisure. All of these things can be detrimental to our mental health and everyday well-being. 
+                <br><br>Also, the propagation of false news is aided by the availability of information over the Internet. It has the potential to deceive the public in order to achieve particular economic, social, or political objectives. 
+                <br>Privacy has also been a major concern.  Everything we do online creates a trace that digital beasts may access at any moment. Our privacy may be further compromised with the growth of the Internet of Things as data is collected by our home assistants. Therefore, digital technology appears to be a double edged sword that must be used with caution
+                <br> <br>While technology has benefitted us, the threats it poses to our life should not be underestimated. Engineers must function in a more thoughtful and responsible manner as humans go into the future, and end-users must strike a balance between the use of technology systems and old-fashioned approaches for getting things done in a more healthy and productive manner.
+                <br><br>Our society is, or will be, a digital society. The future is uncertain, and the opportunities are endless. So, what could be next? Is teleportation a possibility? With science, nothing is unlikely!  
+         </aside>
+        <br>
+
+        <h1><b> Impact of Technology </b></h1>  
+        <p><b>-Subriti Aryal &nbsp;17th May 2021</b></p>
+        <br>
+        
+        <figure>
+                <img class="img hide" id="1" src="./Image/Technology.jpg" alt="An Image"/>             <!-- Source of image to be displayed with its id and with an alternative name for times when the image fails to display-->
+                <img class="img hide" id="2" src="./Image/Technology1.jpg" alt="An Image"/></br>       <!-- Uses the Internal CSS classes ".img"and ".hide" for styling itself-->
+                <figcaption style="margin-left: 200px;">Fig: Technology</figcaption>                   <!-- Adding captions to these Images -->
+                <button onclick="toggle()" style="margin-left: 200px;"> Change Image</button><br>      <!-- Left- margins set to 200px for better view -->
+                    <!-- Adding a Button here, so that when it is pressed the function toggle() is called out and the Image gets changed -->
+         </figure>
+         <br><br><br><br><br><br><br>
+            
+         <!-- Internal JS -->
+
+         <script type="text/javascript">                                            
+                alert("Welcome to my Blog !!");                                         // Displays an alert message during the loading of the webpage
+                document.getElementById("1").style.display = "block";   //Displays Image with id 1 at the loading of the webpage
+                display_date();                                                                     // Calling the function display_date()  
+         </script>
+
+
+         <footer>                                                                                                                                  <!-- Creates a footer at the end of the page -->
+                <h2 style="margin-left: 480px";>                                                                                    <!-- Inline CSS for h2-->
+                Created by <span> Subriti Aryal</span> | &copy; 2021 All rights reserved.</h2>      <!-- <span> changes the style of the particular text enclosed within it -->
+         </footer>                                                                                                                                <!-- &copy; creates a copyright symbol-->
+            
+</body>
+</html>
